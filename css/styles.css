@@ -299,6 +299,103 @@ body {
   cursor: pointer;
 }
 
+.button-close:hover,
+.button-close:focus {
+  cursor: pointer;
+  fill: var(--accent-dark-txt);
+}
+
+.modal-subtitle {
+font-family: var(--main-font);
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--primary-dark-txt);
+margin-bottom: 12px;
+}
+
+.label-modal-input:hover,
+.label-modal-input:active,
+.label-modal-input:focus {
+  cursor: pointer;
+  fill: var(--accent-dark-txt);
+  border: 1px solid var(--accent-dark-txt);
+} 
+
+.label-modal {
+display: flex;
+flex-direction: column;
+margin: 40px;
+min-width: 448px;
+min-height: 40px;
+}
+
+.label-modal-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  min-width: 448px;
+  min-height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.label {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.label-mailing {
+display: flex;
+align-items: center;
+justify-content: center;
+min-width: 448px;
+min-height: 40px;
+margin-bottom: 30px;
+}
+
+.label-mailing-checkbox {
+margin-right: 7px;
+background-color: var(--primary-dark-txt);
+}
+
+.feedback {
+min-width: 448px;
+min-height: 120px;
+resize: none;
+}
+
+.label-text-checkbox {
+  font-family: var(--main-font);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+letter-spacing: 0.03em;
+
+color: var(--secondary-dark-txt);
+}
+
+.lable-treaty {
+  color: var(--accent-dark-txt);
+}
+
+.label-text {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.67;
+letter-spacing: 0.01em;
+
+color: var(--secondary-dark-txt);
+}
+
 .hero-button {
   padding: 10px 32px;
   border-radius: 4px;
