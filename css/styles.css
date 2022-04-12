@@ -260,7 +260,7 @@ body {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -20%) scale(1.1);
+  transform: translate(-50%, 0%) scale(1.1);
 }
 
 .modal {
