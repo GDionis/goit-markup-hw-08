@@ -1,0 +1,47 @@
+@import './reset';
+
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-dark-txt);
+}
+.image {
+    display: block;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section:last-child {
+    padding-bottom: 0px;
+}
+
+.subtitle {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #212121;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 0.875;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-dark-txt);
+}
+
+
+
