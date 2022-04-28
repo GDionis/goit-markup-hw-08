@@ -1,0 +1,126 @@
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+
+  transform: translateX(100%);
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+
+  &.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: initial;
+  }
+}
+
+.mobile-menu {
+  width: 100%;
+  height: 100%;
+  padding-top: 48px;
+  padding-left: 40px;
+
+  &__contacts {
+    margin-bottom: 64px;
+  }
+
+  &__link {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.77;
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+
+    @media screen and (min-width: 320px) and (max-width: 350px) {
+      font-size: 32px;
+    }
+  }
+
+  &__links {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+  }
+}
+
+.mobile-nav {
+  margin-bottom: 302px;
+
+  &__item {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__active {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
+
+  &__link {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+  }
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__link {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    color: #2196f3;
+
+    &::after {
+      content: "";
+
+      width: 22px;
+      height: 0px;
+      left: 135px;
+      top: 726px;
+
+      margin-right: 10px;
+      margin-left: 10px;
+
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+    }
+    &:not(:last-child):after {
+      content: "";
+    }
+  }
+}

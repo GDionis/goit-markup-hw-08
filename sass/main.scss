@@ -1,23 +1,23 @@
-// variables
-@import './variables/variables';
-
 // utils
-@import './utils/visually-hidden';
+@import "./utils/visually-hidden";
+@import "./utils/variables";
 
 // base styles
-@import './base/base';
+@import "./base/base";
 
 // components
-@import './components/button';
-@import './components/container';
-@import './components/header';
-@import './components/contacts';
-@import './components/hero';
-@import './components/backdrop';
-@import './components/label';
-@import './components/details';
-@import './components/development';
-@import './components/team';
-@import './components/clients';
-@import './components/footer';
-@import './components/portfolio';
+@import "./components/button";
+@import "./components/btn-menu";
+@import "./components/mobile-overlay";
+@import "./components/container";
+@import "./components/header";
+@import "./components/contacts";
+@import "./components/hero";
+@import "./components/backdrop";
+@import "./components/label";
+@import "./components/details";
+@import "./components/development";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/portfolio";
