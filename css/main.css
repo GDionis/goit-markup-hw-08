@@ -377,6 +377,7 @@ body {
 
 .socials {
   display: flex;
+  flex-wrap: wrap;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 18px;
