@@ -6,15 +6,58 @@
   height: 600px;
   margin-right: auto;
   margin-left: auto;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../img/studio/Background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    url(../img/studio/Background_sm.jpg);
+  @include mq(retina) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/studio/Background_sm@2x.jpg);
+  }
+
+  @include mq(tablet) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/studio/Background_md.jpg);
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/studio/Background_md@2x.jpg);
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/studio/Background_lg.jpg);
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/studio/Background_lg@2x.jpg);
+    }
+  }
 
   @media screen and (max-width: 1199px) {
     padding: 118px 0;

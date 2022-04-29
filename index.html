@@ -164,19 +164,44 @@
                 <ul class="list development__list">
                     <li class="development__item">
                         <div class="development__overfow">
-                        <img class="image" src="./img/studio/box1.jpg" alt="Разработка программ" width="370">
+                            <picture>
+                                <source 
+                                media="(min-width: 1200px)" 
+                                srcset="
+                                ./img/studio/box1_lg.jpg    1x, 
+                                ./img/studio/box1_lg@2x.jpg 2x
+                                " 
+                                type="image/jpeg"/>
+                            <img class="image" src="./img/studio/box1.jpg" alt="Разработка программ" width="370">
+                            </picture>
                             <p class="development__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                     </div>
                     </li>
                     <li class="development__item">
                         <div class="development__overfow">
-                        <img class="image" src="./img/studio/box2.jpg" alt="Разработка приложений" width="370">
+                            <picture>
+                                <source media="(min-width: 1200px)" 
+                                srcset="
+                                    ./img/studio/box2_lg.jpg    1x, 
+                                    ./img/studio/box2_lg@2x.jpg 2x
+                                    " 
+                                    type="image/jpeg"/>
+                                <img class="image" src="./img/studio/box2.jpg" alt="Разработка приложений" width="370">
+                            </picture>
                             <p class="development__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                         </div>
                     </li>
                     <li class="development__item">
                         <div class="development__overfow">
-                        <img class="image" src="./img/studio/box3.jpg" alt="Разработка ИИ" width="370">
+                            <picture>
+                                <source media="(min-width: 1200px)" 
+                                srcset="
+                                    ./img/studio/box3_lg.jpg    1x, 
+                                    ./img/studio/box3_lg@2x.jpg 2x
+                                    " 
+                                    type="image/jpeg"/>
+                                <img class="image" src="./img/studio/box3.jpg" alt="Разработка ИИ" width="370">
+                            </picture>
                             <p class="development__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                         </div>
                     </li>
@@ -188,8 +213,24 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="list team__list">
                     <li class="team__item">
-                        <img class="image" src="./img/studio/productdesigner.jpg" alt="Фото нашего дизайнера"
-                            width="270">
+                        <picture>
+                            <source media="(max-width: 767px)" 
+                                srcset="
+                                ./img/studio/productdesigner_sm.jpg    1x, 
+                                ./img/studio/productdesigner_sm@2x.jpg 2x
+                                " type="image/jpeg" />
+                             <source media="(max-width: 1199px)" 
+                                srcset="
+                                ./img/studio/productdesigner_md.jpg    1x, 
+                                ./img/studio/productdesigner_md@2x.jpg 2x
+                                " type="image/jpeg" />
+                            <source media="(min-width: 1200px)" 
+                                srcset="
+                                ./img/studio/productdesigner_lg.jpg    1x, 
+                                ./img/studio/productdesigner_lg@2x.jpg 2x
+                                " type="image/jpeg" />
+                            <img class="image" src="./img/studio/productdesigner.jpg" alt="Фото нашего дизайнера" width="270">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__descr" lang="eu">Product Designer</p>
@@ -226,7 +267,21 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="image" src="./img/studio/box4.jpg" alt="Фото нашего разраба" width="270">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="
+                                                        ./img/studio/box4_sm.jpg    1x, 
+                                                        ./img/studio/box4_sm@2x.jpg 2x
+                                                        " type="image/jpeg" />
+                            <source media="(max-width: 1199px)" srcset="
+                                                        ./img/studio/box4_md.jpg    1x, 
+                                                        ./img/studio/box4_md@2x.jpg 2x
+                                                        " type="image/jpeg" />
+                            <source media="(min-width: 1200px)" srcset="
+                                                        ./img/studio/box4_lg.jpg    1x, 
+                                                        ./img/studio/box4_lg@2x.jpg 2x
+                                                        " type="image/jpeg" />
+                            <img class="image" src="./img/studio/box4.jpg" alt="Фото нашего разраба" width="270">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__descr" lang="eu">Frontend Developer</p>
@@ -263,7 +318,21 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="image" src="./img/studio/box5.jpg" alt="Фото нашего маркетолога" width="270">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="
+                                                        ./img/studio/box5_sm.jpg    1x, 
+                                                        ./img/studio/box5_sm@2x.jpg 2x
+                                                        " type="image/jpeg" />
+                            <source media="(max-width: 1199px)" srcset="
+                                                        ./img/studio/box5_md.jpg    1x, 
+                                                        ./img/studio/box5_md@2x.jpg 2x
+                                                        " type="image/jpeg" />
+                            <source media="(min-width: 1200px)" srcset="
+                                                        ./img/studio/box5_lg.jpg    1x, 
+                                                        ./img/studio/box5_lg@2x.jpg 2x
+                                                        " type="image/jpeg" />
+                            <img class="image" src="./img/studio/box5.jpg" alt="Фото нашего маркетолога" width="270">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__descr" lang="eu">Marketing</p>
@@ -300,7 +369,21 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="image" src="./img/studio/uidesigner.jpg" alt="Фото нашего дизайнера" width="270">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="
+                                                        ./img/studio/uidesigner_sm.jpg    1x, 
+                                                        ./img/studio/uidesigner_sm@2x.jpg 2x
+                                                        " type="image/jpeg" />
+                            <source media="(max-width: 1199px)" srcset="
+                                                        ./img/studio/uidesigner_md.jpg    1x, 
+                                                        ./img/studio/uidesigner_md@2x.jpg 2x
+                                                        " type="image/jpeg" />
+                            <source media="(min-width: 1200px)" srcset="
+                                                        ./img/studio/uidesigner_lg.jpg    1x, 
+                                                        ./img/studio/uidesigner_lg@2x.jpg 2x
+                                                        " type="image/jpeg" />
+                            <img class="image" src="./img/studio/uidesigner.jpg" alt="Фото нашего дизайнера" width="270">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__descr" lang="eu">UI Designer</p>

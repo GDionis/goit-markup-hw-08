@@ -94,33 +94,26 @@
 
 .socials {
   display: flex;
-  flex-wrap: wrap;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  cursor: pointer;
 
   &__link {
-    font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    cursor: pointer;
+    display: block;
     color: #2196f3;
-
-    &::after {
-      content: "";
-
-      width: 22px;
-      height: 0px;
-      left: 135px;
-      top: 726px;
-
-      margin-right: 10px;
-      margin-left: 10px;
-
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      transform: rotate(90deg);
-    }
-    &:not(:last-child):after {
-      content: "";
-    }
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.socials__item:last-child .socials__link {
+  padding: 0;
+  border: none;
 }
