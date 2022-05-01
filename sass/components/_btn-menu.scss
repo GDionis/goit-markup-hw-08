@@ -1,15 +1,22 @@
 .btn-menu {
-  position: relative;
+  position: fixed;
+  top: 10px;
+  right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   background-color: transparent;
   border: transparent;
   outline: transparent;
-  z-index: 99;
+  z-index: 98;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-dark-txt);
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
