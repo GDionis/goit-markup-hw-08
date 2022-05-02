@@ -440,16 +440,8 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    max-width: 1200px;
-  }
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .header__container {
@@ -461,6 +453,18 @@ body {
   .header__container {
     justify-content: space-between;
     height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__container {
+    max-width: 1200px;
   }
 }
 
@@ -653,7 +657,6 @@ body {
   height: 600px;
   margin-right: auto;
   margin-left: auto;
-  border-top: 1px solid #ececec;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -773,6 +776,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .modal {
     width: 90%;
+    height: 90%;
     min-width: 0;
     min-height: 0;
   }
